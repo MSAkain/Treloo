@@ -1,0 +1,77 @@
+.header {
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	margin-bottom: 240px;
+
+	&__top {
+		padding: 24px 0;
+	}
+
+	&__nav {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__logo {
+
+		&:hover {
+			path {
+				fill: $blue;
+			}
+		}
+
+		path {
+			transition: fill 0.5s linear;
+		}
+	}
+
+	&__list {
+		max-width: 600px;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 24px;
+		font-weight: 500;
+	}
+
+	&__item {
+		&:hover {
+			.header__link {
+				color: $blue;
+			}
+		}
+	}
+
+	&__link {
+		transition: color 0.5s linear;
+		color: $white;
+	}
+
+	&__button {
+		color: $blue;
+		background-color: $white;
+		max-width: 141px;
+		width: 100%;
+		border-radius: 10px;
+		padding: 14px 43px 15px 44px;
+	}
+
+	&__middle {
+		color: $white;
+	}
+
+	&__content {}
+
+	&__title {}
+
+	&__text {
+		max-width: 756px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	&__bottom {}
+}

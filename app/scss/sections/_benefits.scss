@@ -1,0 +1,88 @@
+.benefits {
+	padding: 80px 0;
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__photo {
+		position: relative;
+		max-width: 480px;
+		width: 100%;
+
+		img {
+			border-radius: 75px;
+		}
+	}
+
+	&__info {
+		position: absolute;
+		background-color: $white;
+		box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+		border-radius: 35px;
+		max-width: 180px;
+		padding: 27px 30px 26px 30px;
+		color: $blue;
+		font-size: 36px;
+		font-weight: 600;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-transform: uppercase;
+		line-height: 1;
+
+		span {
+			font-size: 18px;
+			color: $black;
+			font-weight: 300;
+		}
+
+
+		&--hotels {
+			bottom: 143px;
+			right: -100px;
+		}
+
+		&--tourists {
+			bottom: 303px;
+			left: -100px;
+		}
+
+		&--destinations {
+			top: 56px;
+			right: -100px;
+		}
+	}
+
+	&__content {
+		max-width: 580px;
+		width: 100%;
+	}
+
+	&__title {
+		margin-bottom: 20px;
+	}
+
+	&__text {
+		font-weight: 400;
+		margin-bottom: 20px;
+
+		p {
+			&:not(:last-child) {
+				margin-bottom: 55px;
+			}
+		}
+	}
+
+	&__button {
+		max-width: 180px;
+		line-height: 1.5;
+		background-color: $blue;
+		color: $white;
+		font-weight: 400;
+		border-radius: 10px;
+		padding: 23px 34px;
+	}
+}

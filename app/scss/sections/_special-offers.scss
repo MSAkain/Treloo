@@ -1,0 +1,58 @@
+.special-offers {
+	padding: 160px 0;
+
+	&__title {
+		text-align: center;
+		margin-bottom: 60px;
+	}
+
+	&__fillter {
+		background: $white;
+		box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.05);
+		border-radius: 10px;
+		padding: 10px 20px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 360px;
+		margin: 0 auto;
+		margin-bottom: 40px;
+	}
+
+	&__item {
+
+		&:not(:last-child) {
+			margin-right: 5px;
+		}
+
+		&:hover {
+			.special-offers__button {
+				color: $white;
+				background-color: $blue;
+			}
+		}
+	}
+
+	&__button {
+		padding: 10px 24px 9px 23px;
+		border-radius: 10px;
+		color: rgba(0, 0, 0, 0.5);
+		font-size: 18px;
+		transition: color 0.5s linear, background-color 0.5s linear;
+
+		&--active {
+			color: $white;
+			background-color: $blue;
+		}
+	}
+
+	&__cards {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__item {
+		max-width: 380px;
+		width: 100%;
+	}
+}
