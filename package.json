@@ -17,7 +17,11 @@
 		"gulp-imagemin": "^7.1.0",
 		"gulp-sass": "^5.0.0",
 		"gulp-uglify": "^3.0.2",
-		"sass": "^1.35.2"
+		"isotope-layout": "^3.0.6",
+		"sass": "^1.35.2",
+		"swiper": "^8.3.2"
 	},
-	"dependencies": {}
+	"dependencies": {
+		"mixitup": "^3.3.1"
+	}
 }

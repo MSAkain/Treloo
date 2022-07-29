@@ -1,0 +1,63 @@
+.card-dest {
+	background-color: $white;
+	box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.1);
+	border-radius: 25px;
+	padding: 10px;
+
+	&__photo {
+		position: relative;
+		margin-bottom: 20px;
+	}
+
+	&__img {
+		border-radius: 25px;
+	}
+
+	&__rate {
+		position: absolute;
+		top: 14px;
+		right: 15px;
+		font-size: 12px;
+		color: $black;
+		padding: 1px 10px 1px 27px;
+		background-color: $white;
+		border-radius: 25px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			background-image: url('../images/icons/star.png');
+			width: 15px;
+			height: 15px;
+			left: 9px;
+			bottom: 6px;
+		}
+	}
+
+	&__about {
+		padding-left: 20px;
+	}
+
+	&__title {
+		font-weight: 600;
+		font-size: 18px;
+		color: $black;
+		margin-bottom: 5px;
+	}
+
+	&__location {
+		position: relative;
+		padding-left: 17px;
+		font-size: 14px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			background-image: url('../images/icons/location.png');
+			width: 17px;
+			height: 17px;
+			left: 0;
+			bottom: 3px;
+		}
+	}
+}

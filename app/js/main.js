@@ -48,3 +48,28 @@ class ItcTabs {
 
 
 new ItcTabs('.tabs');
+
+
+const containerEl1 = document.querySelector('[data-ref="container-1"]');
+const containerEl2 = document.querySelector('[data-ref="container-2"]');
+
+const config = {
+	controls: {
+		scope: 'local'
+	}
+};
+
+const mixer1 = mixitup(containerEl1, config);
+const mixer2 = mixitup(containerEl2, config);
+
+
+
+const swiper = new Swiper('.swiper-quotes', {
+	slidesPerView: 2,
+	spaceBetween: 20,
+
+	navigation: {
+		nextEl: '.swiper-quotes__next',
+		prevEl: '.swiper-quotes__prev'
+	},
+});

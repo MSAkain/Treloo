@@ -174,30 +174,31 @@
 
 	<main class="main">
 
-		<section class="special-offers">
+		<section class="special-offers" data-ref="container-1">
 			<div class="container">
 				<h2 class="special-offers__title title-section">
 					Special Upcoming Offers
 				</h2>
 				<ul class="special-offers__fillter">
 					<li class="special-offers__item">
-						<button class="special-offers__button special-offers__button--active" type="button">
+						<button class="special-offers__button special-offers__button--active" type="button"
+							data-filter=".category-a">
 							Team
 						</button>
 					</li>
 					<li class="special-offers__item">
-						<button class="special-offers__button" type="button">
+						<button class="special-offers__button" type="button" data-filter=".category-b">
 							Couple
 						</button>
 					</li>
 					<li class="special-offers__item">
-						<button class="special-offers__button" type="button">
+						<button class="special-offers__button" type="button" data-filter=".category-c">
 							Family
 						</button>
 					</li>
 				</ul>
 				<ul class="special-offers__cards">
-					<li class="special-offers__item">
+					<li class="special-offers__item mix category-a">
 						<article class="special-offers__card card">
 							<div class="card__photo">
 								<img src="images/main/offer-1.jpg" alt="photo sea">
@@ -231,7 +232,7 @@
 							</div>
 						</article>
 					</li>
-					<li class="special-offers__item">
+					<li class="special-offers__item mix category-a">
 						<article class="special-offers__card card">
 							<div class="card__photo">
 								<img src="images/main/offer-2.jpg" alt="photo sea">
@@ -265,7 +266,109 @@
 							</div>
 						</article>
 					</li>
-					<li class="special-offers__item">
+					<li class="special-offers__item mix category-a">
+						<article class="special-offers__card card">
+							<div class="card__photo">
+								<img src="images/main/offer-3.jpg" alt="photo sea">
+							</div>
+							<span class="card__date">
+								22 dec 2022
+							</span>
+							<div class="card__content">
+								<div class="card__top">
+									<span class="card__category card__category--relax">
+										Relax
+									</span>
+									<span class="card__duration">
+										7 Days, 6 Nights
+									</span>
+								</div>
+								<h3 class="card__title">
+									Lona X
+								</h3>
+								<div class="card__bottom">
+									<div class="card__price">
+										340$
+										<span> /
+											Person
+										</span>
+									</div>
+									<a class="card__button" href="#">
+										Book Now
+									</a>
+								</div>
+							</div>
+						</article>
+					</li>
+					<li class="special-offers__item mix category-c" style="display: none;">
+						<article class="special-offers__card card">
+							<div class="card__photo">
+								<img src="images/main/offer-1.jpg" alt="photo sea">
+							</div>
+							<span class="card__date">
+								14 feb 2022
+							</span>
+							<div class="card__content">
+								<div class="card__top">
+									<span class="card__category card__category--relax">
+										Relax
+									</span>
+									<span class="card__duration">
+										3 Days, 3 Nights
+									</span>
+								</div>
+								<h3 class="card__title">
+									Loga Sea
+								</h3>
+								<div class="card__bottom">
+									<div class="card__price">
+										700$
+										<span> /
+											Person
+										</span>
+									</div>
+									<a class="card__button" href="#">
+										Book Now
+									</a>
+								</div>
+							</div>
+						</article>
+					</li>
+					<li class="special-offers__item mix category-b" style="display: none;">
+						<article class="special-offers__card card">
+							<div class="card__photo">
+								<img src="images/main/offer-2.jpg" alt="photo sea">
+							</div>
+							<span class="card__date">
+								18 jun 2022
+							</span>
+							<div class="card__content">
+								<div class="card__top">
+									<span class="card__category card__category--adventure">
+										Adventure
+									</span>
+									<span class="card__duration">
+										4 Days, 3 Nights
+									</span>
+								</div>
+								<h3 class="card__title">
+									Ansgar Scheffold
+								</h3>
+								<div class="card__bottom">
+									<div class="card__price">
+										400$
+										<span> /
+											Person
+										</span>
+									</div>
+									<a class="card__button" href="#">
+										Book Now
+									</a>
+								</div>
+							</div>
+						</article>
+					</li>
+					<li class="special-offers__item mix category-b" style="display: none;">
 						<article class="special-offers__card card">
 							<div class="card__photo">
 								<img src="images/main/offer-3.jpg" alt="photo sea">
@@ -351,10 +454,312 @@
 			</div>
 		</section>
 
+		<section class="recommended-destination" data-ref="container-2">
+			<div class="container">
+				<h2 class="recommended-destination__title title-section">
+					Recommended Destination
+				</h2>
+				<ul class="recommended-destination__fillters">
+					<li class="recommended-destination__fillter">
+						<button class="recommended-destination__button recommended-destination__button--active"
+							data-filter=".category-a">
+							Populor
+						</button>
+					</li>
+					<li class="recommended-destination__fillter">
+						<button class="recommended-destination__button" data-filter=".category-b">
+							Adventure
+						</button>
+					</li>
+					<li class="recommended-destination__fillter">
+						<button class="recommended-destination__button" data-filter=".category-c">
+							Beath
+						</button>
+					</li>
+				</ul>
+				<ul class="recommended-destination__cards">
+					<li class="recommended-destination__card mix category-a">
+						<article class="recommended-destination__item card-dest">
+							<a class="card-dest__link" href="#">
+								<div class="card-dest__photo">
+									<img class="card-dest__img" src="images/main/destination-1.jpg" alt="Photo natural">
+									<span class="card-dest__rate">
+										3.4
+									</span>
+								</div>
+								<div class="card-dest__about">
+									<h3 class="card-dest__title">
+										Kina Mountain
+									</h3>
+									<span class="card-dest__location">
+										Cambodia
+									</span>
+								</div>
+							</a>
+						</article>
+					</li>
+					<li class="recommended-destination__card mix category-a">
+						<article class="recommended-destination__item card-dest">
+							<a class="card-dest__link" href="#">
+								<div class="card-dest__photo">
+									<img class="card-dest__img" src="images/main/destination-2.jpg" alt="Photo natural">
+									<span class="card-dest__rate">
+										4.5
+									</span>
+								</div>
+								<div class="card-dest__about">
+									<h3 class="card-dest__title">
+										Kina Mountain
+									</h3>
+									<span class="card-dest__location">
+										Cambodia
+									</span>
+								</div>
+							</a>
+						</article>
+					</li>
+					<li class="recommended-destination__card mix category-a">
+						<article class="recommended-destination__item card-dest">
+							<a class="card-dest__link" href="#">
+								<div class="card-dest__photo">
+									<img class="card-dest__img" src="images/main/destination-3.jpg" alt="Photo natural">
+									<span class="card-dest__rate">
+										4.2
+									</span>
+								</div>
+								<div class="card-dest__about">
+									<h3 class="card-dest__title">
+										Kina Mountain
+									</h3>
+									<span class="card-dest__location">
+										Cambodia
+									</span>
+								</div>
+							</a>
+						</article>
+					</li>
+					<li class="recommended-destination__card mix category-a">
+						<article class="recommended-destination__item card-dest">
+							<a class="card-dest__link" href="#">
+								<div class="card-dest__photo">
+									<img class="card-dest__img" src="images/main/destination-4.jpg" alt="Photo natural">
+									<span class="card-dest__rate">
+										3.5
+									</span>
+								</div>
+								<div class="card-dest__about">
+									<h3 class="card-dest__title">
+										Kina Mountain
+									</h3>
+									<span class="card-dest__location">
+										Cambodia
+									</span>
+								</div>
+							</a>
+						</article>
+					</li>
+					<li class="recommended-destination__card mix category-b" style="display: none;">
+						<article class="recommended-destination__item card-dest">
+							<a class="card-dest__link" href="#">
+								<div class="card-dest__photo">
+									<img class="card-dest__img" src="images/main/destination-1.jpg" alt="Photo natural">
+									<span class="card-dest__rate">
+										3.4
+									</span>
+								</div>
+								<div class="card-dest__about">
+									<h3 class="card-dest__title">
+										Kina Mountain
+									</h3>
+									<span class="card-dest__location">
+										Cambodia
+									</span>
+								</div>
+							</a>
+						</article>
+					</li>
+					<li class="recommended-destination__card mix category-b" style="display: none;">
+						<article class="recommended-destination__item card-dest">
+							<a class="card-dest__link" href="#">
+								<div class="card-dest__photo">
+									<img class="card-dest__img" src="images/main/destination-2.jpg" alt="Photo natural">
+									<span class="card-dest__rate">
+										4.5
+									</span>
+								</div>
+								<div class="card-dest__about">
+									<h3 class="card-dest__title">
+										Kina Mountain
+									</h3>
+									<span class="card-dest__location">
+										Cambodia
+									</span>
+								</div>
+							</a>
+						</article>
+					</li>
+					<li class="recommended-destination__card mix category-c" style="display: none;">
+						<article class="recommended-destination__item card-dest">
+							<a class="card-dest__link" href="#">
+								<div class="card-dest__photo">
+									<img class="card-dest__img" src="images/main/destination-3.jpg" alt="Photo natural">
+									<span class="card-dest__rate">
+										4.2
+									</span>
+								</div>
+								<div class="card-dest__about">
+									<h3 class="card-dest__title">
+										Kina Mountain
+									</h3>
+									<span class="card-dest__location">
+										Cambodia
+									</span>
+								</div>
+							</a>
+						</article>
+					</li>
+					<li class="recommended-destination__card mix category-b" style="display: none;">
+						<article class="recommended-destination__item card-dest">
+							<a class="card-dest__link" href="#">
+								<div class="card-dest__photo">
+									<img class="card-dest__img" src="images/main/destination-4.jpg" alt="Photo natural">
+									<span class="card-dest__rate">
+										3.5
+									</span>
+								</div>
+								<div class="card-dest__about">
+									<h3 class="card-dest__title">
+										Kina Mountain
+									</h3>
+									<span class="card-dest__location">
+										Cambodia
+									</span>
+								</div>
+							</a>
+						</article>
+					</li>
+				</ul>
+
+				<div class="swiper swiper-quotes">
+					<div class="swiper-wrapper swiper-quotes__wrapper">
+						<div class="swiper-slide swiper-quotes__slide">
+							<blockquote class="swiper-quotes__blockquote">
+								<p>
+									Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful to
+									everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible.
+								</p>
+							</blockquote>
+							<figcaption class="swiper-quotes__figcaption">
+								-Vand D
+								<cite>
+									Happy Treloo
+								</cite>
+							</figcaption>
+							<div class="swiper-quotes__photo">
+								<img src="images/main/woman-photo.jpg" alt="woman photo">
+								<span class="swiper-quotes__rate">
+									4.5
+								</span>
+							</div>
+						</div>
+						<div class="swiper-slide swiper-quotes__slide">
+							<blockquote class="swiper-quotes__blockquote">
+								<p>
+									Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful to
+									everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible.
+								</p>
+							</blockquote>
+							<figcaption class="swiper-quotes__figcaption">
+								-Tru Vio
+								<cite>
+									Happy Treloo
+								</cite>
+							</figcaption>
+							<div class="swiper-quotes__photo">
+								<img src="images/main/man-photo.jpg" alt="woman photo">
+								<span class="swiper-quotes__rate">
+									4.9
+								</span>
+							</div>
+						</div>
+						<div class="swiper-slide swiper-quotes__slide">
+							<blockquote class="swiper-quotes__blockquote">
+								<p>
+									Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful to
+									everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible.
+								</p>
+							</blockquote>
+							<figcaption class="swiper-quotes__figcaption">
+								-Tru Vio
+								<cite>
+									Happy Treloo
+								</cite>
+							</figcaption>
+							<div class="swiper-quotes__photo">
+								<img src="images/main/man-photo.jpg" alt="woman photo">
+								<span class="swiper-quotes__rate">
+									4.9
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-quotes__arrows">
+					<button class="swiper-quotes__prev" type="button">
+						<img src="images/icons/arrow-left.svg" alt="arrow left">
+					</button>
+					<button class="swiper-quotes__next" type="button">
+						<img src="images/icons/arrow-right.svg" alt="arrow right">
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="promo">
+			<div class="container">
+				<div class="promo__photo" style="background-image: url(images/main/bg-footer.jpg)">
+					<h2 class="promo__title title-section">
+						Don’t Miss The 50% Discount if You register Today
+					</h2>
+					<button class="promo__button" type="button">
+						Register Today
+					</button>
+				</div>
+			</div>
+		</section>
+
 	</main>
 
 	<footer class="footer">
-
+		<div class="container">
+			<div class="footer__box">
+				<span class="footer__copy">
+					© 2022 Treloo LLC - All right reserved.
+				</span>
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a class="footer__link" href="#">
+							Review
+						</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__link" href="#">
+							Tips
+						</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__link" href="#">
+							Alerts
+						</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__link" href="#">
+							Blog
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</footer>
 
 
